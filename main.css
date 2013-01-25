@@ -1,0 +1,500 @@
+/* Hi, there! 
+   The only reason the css is not minified is to be readable for you.
+   Thank you for your interest and happy reading.
+*/
+/* Global Resets */
+html
+{
+	margin: 0 ;
+	min-width: 980px;
+}
+a
+{
+	text-decoration: none;
+	color: #3D4A8B;
+	outline: 0;
+}
+a:hover
+{
+	text-shadow: 0 1px 0 Black;
+}
+p
+{
+	margin: 0 20px 20px 20px;
+}
+::selection
+{
+	background: #99ddff;
+}
+#section-wrapper .m0
+{
+	margin: 0;
+}
+#section-wrapper .oh
+{
+	overflow: hidden;
+}
+#section-wrapper .fl
+{
+	float: left;
+} 
+.entt
+{
+	font-size: 25px;
+	line-height: 19px;	
+}
+/* Layout */
+html
+{
+	background: transparent url("img/bg.jpg") fixed;
+	font: 16px/normal Tahoma, Geneva, sans-serif; 
+} 
+body
+{
+	width: 980px;
+	margin: 0 auto;		
+}
+aside,
+#msg
+{
+	position: fixed;	
+	top: 62px;
+	left: 50%;
+	left: 0\9;
+	margin-left: -490px;
+	margin-left: 0\9;
+	width: 260px;
+	background: White;
+	font-family: Comic Sans MS, Comic Sans MS5, cursive;
+}  
+#msg
+{
+	top: 0;
+	width: 260px;
+	padding: 0;
+	background: transparent;
+	text-align: center;
+}
+.meme
+{
+	background: #2c4762 url("img/meme.png") no-repeat 50% 50px !important;
+	display: block;	 
+}
+.meme h2
+{
+	margin-bottom: 410px;
+}
+
+.meme ul
+{
+	color: White;
+	text-shadow: 0 0 4px Black;	
+}
+#reset
+{
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	display: block;
+	padding: 3px 7px;
+	background-color: White;
+	font-size: 11px;	
+	border-top-right-radius: 10px;
+	z-index: 1;
+}
+aside:before, 
+aside:after 
+{
+	position: absolute;  
+	bottom: 15px;  
+	z-index: -1;  
+	width: 50%;  
+	height: 20%;  
+	content: "";  
+	background: rgba(0, 0, 0, 0.7);  
+
+	-webkit-box-shadow: 0 15px 10px rgba(0, 0, 0, 0.7);  
+	   -moz-box-shadow: 0 15px 10px rgba(0, 0, 0, 0.7);	
+	        box-shadow: 0 15px 10px rgba(0, 0, 0, 0.7);	
+}
+
+aside:before 
+{
+	right: auto;  
+	left: 10px;  
+	-webkit-transform: rotate(-5deg);  
+	   -moz-transform: rotate(-5deg);  
+	     -o-transform: rotate(-5deg);  
+}	
+aside:after 
+{  
+	right: 10px;  
+	left: auto; 
+	-webkit-transform: rotate(5deg);  
+	   -moz-transform: rotate(5deg);   
+	     -o-transform: rotate(5deg);
+}	
+aside > div
+{
+	width: 220px;
+	background: White;
+	padding: 20px;	
+}
+aside h1
+{
+	position: relative;
+	z-index: 1;
+	margin: 0;
+	height: 220px;
+	width: 220px;
+	background: transparent url("img/me_art.jpg");
+}
+aside img,
+#more-info
+{
+	opacity: 1;
+ 	-webkit-transition: all .5s ease-in;
+	   -moz-transition: all .5s ease-in;
+        -ms-transition: all .5s ease-in;
+         -o-transition: all .5s ease-in;
+		    transition: all .5s ease-in;
+}
+aside h1:hover img
+{	
+	 opacity: 0;
+}
+aside h1:hover + #more-info
+{
+ 	opacity: 1;
+ 	margin-top: 20px;
+}
+#more-info
+{
+	opacity: 0;
+	margin-top: -92px;
+}
+
+aside ul
+{
+	margin: 20px 0 0;
+}
+aside li
+{
+	display: inline;
+	padding: 0;
+	background: none;
+}
+
+aside li + li:before
+{
+	content: " / ";
+}
+
+#section-wrapper
+{
+	float: right;
+	width: 700px;	
+	padding-top: 62px;
+	background-color: #f1f1f1;
+}
+section
+{
+	padding-bottom: 40px;
+	text-shadow: 0 1px 0 White;
+}
+section h2
+{
+	float: right;
+	width: 100%;
+	height: 20px;
+	margin: 0 0 20px 0;
+	padding: 5px 0 5px 10px;
+	font-size: 20px;
+	line-height: 20px;
+	text-transform: uppercase; 
+}
+section h2:after
+{
+	content: "";
+	float: left;
+	border: 5px solid Black;
+	border-color: Black Black transparent transparent;	
+	margin: 25px 0 0 -10px;	
+}
+section h3
+{
+	font-size: 16px;
+}
+
+ul
+{
+	clear: both;
+	padding: 0;
+	margin: 20px;
+	list-style-type: none;
+}
+
+li
+{
+	margin-bottom: 10px;
+	padding-left: 10px;
+	background: url("data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAEAQMAAACTPww9AAAABlBMVEU6bIwAAAD7yw7LAAAACXZwQWcAAAAEAAAABADqLzobAAAAC0lEQVQI12NggAAAAAgAAS8g3TEAAAAASUVORK5CYII=") no-repeat 0 7px;
+} 
+
+li li 
+{
+	background-image: url("data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAEAQMAAACTPww9AAAABlBMVEU6bIz////7dSjZAAAACXZwQWcAAAAEAAAABADqLzobAAAADklEQVQI12NgYEgAQgYAAwgAwSZfD1sAAAAASUVORK5CYII=");
+}
+li ul
+{
+	margin-top: 5px;
+}
+.ext-links a
+{
+	padding-right: 13px;
+	background: transparent url("data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKAQMAAAC3/F3+AAAABlBMVEU9Sov///81Jvp8AAAAAnRSTlP/AOW3MEoAAAAJdnBBZwAAAAoAAAAKAE6mduUAAAAmSURBVAjXYzjAwPC8geFzAwN7A0NeA0MMA0MmA0NpA0PtAQbGAwCK6QjIbauu7QAAAABJRU5ErkJggg==") no-repeat  right 5px;	
+}
+
+/* Colorings */
+#edu h2 { background-color: #619cc2;}
+#edu h2:after { border-color: #3a6c8c #3a6c8c transparent transparent;}
+
+#work h2 { background-color: #e34dd0;}
+#work h2:after { border-color: #97318a #97318a transparent transparent;}
+
+#skills h2 { background-color: YellowGreen;}
+#skills h2:after { border-color: #7aa227 #7aa227 transparent transparent;}
+
+#current h2 { background-color: #f4d853;}
+#current h2:after { border-color: #ab9633 #ab9633 transparent transparent;}
+
+#daily h2 { background-color: #7e8ede;}
+#daily h2:after { border-color: #5261ab #5261ab transparent transparent;}
+
+#person h2 { background-color: #ec7878;}
+#person h2:after { border-color: #a84646 #a84646 transparent transparent;}
+
+#contacts h2 { background-color: #74e2e1;}
+#contacts h2:after { border-color: #43b0af #43b0af transparent transparent;} 
+
+
+#edu-curric
+{	
+	margin-bottom: 40px;
+	-moz-column-count: 2;
+	-moz-column-gap: 20px;
+	-webkit-column-count: 2;
+	-webkit-column-gap: 20px;
+	column-count: 2;
+	column-gap: 20px;
+}
+
+#skills .ext-links
+{
+	-moz-column-count: 3;
+	-moz-column-gap: 20px;
+	-webkit-column-count: 3;
+	-webkit-column-gap: 20px;
+	column-count: 3;
+	column-gap: 20px;
+}
+mark
+{
+	float: left;
+	min-width: 70px;
+	margin: 0 5px 1px -10px;
+	padding: 0 5px;
+	background-color: Grey;
+	border-radius: 3px;
+	font: 700 10px/19px Arial;
+	text-align: center;
+	text-transform: uppercase;
+	text-shadow:  0 0 0 White; 
+}
+.pro { background-color: #E34DD0;}
+.exp { background-color: #EC7878;}
+.ex  { background-color: #F4D853;}
+.adv { background-color: #7E8EDE;}
+.gd	 { background-color: #9ACD32;}
+
+
+
+/*Daily Favs*/
+#daily li
+{
+	float: left;
+	margin: 0 20px 0 0;
+	background: none; 
+}
+.icon
+{
+	display: block;
+	overflow: hidden;
+	background: transparent url("img/sprite.png") no-repeat; 
+	text-indent: -6666px;
+}
+
+#daily .moto { background-position: -211px 0; width: 90px; height: 12px; margin: 0 50px 10px 0; }
+#daily .subl { background-position: -1px -51px; width: 56px; height: 48px; }
+#daily .iet  { background-position: -114px -52px; width: 48px; height: 48px; }
+#daily .winm { background-position: -60px -51px; width: 51px; height: 48px; }
+#daily .smus { background-position: -71px 0; width: 137px; height: 39px; }
+#daily .ditt { background-position: -51px 0; width: 20px; height: 20px; margin-top: 4px; }
+#daily .take { background-position: 0 0; width: 48px; height: 48px; }
+#daily .eval { background-position: -165px -51px; width: 32px; height: 30px; }
+ 
+ 
+#contacts .fIcon
+{
+	width: 33px;
+	height: 32px;
+	background-position: -233px -15px;
+} 
+#contacts .inIcon
+{
+	width: 33px;
+	height: 32px;
+	margin-right: 10px;
+	background-position: -269px -15px;
+}
+
+object
+{
+	display: none;
+}
+
+@media handheld, screen and (max-width: 980px)
+{
+	html
+	{
+		min-width: 100%;
+	}
+	body
+	{
+		width: 100%;
+	}
+	aside
+	{
+		float: left;
+		position: relative;
+		width: 30%;
+		max-width: 220px;
+		margin-left: 0;
+		left: auto;
+	}
+	aside > div
+	{	
+		width: auto;
+	}
+	aside img
+	{
+		display: none;
+	}
+	aside h1
+	{
+		width: 100%;
+		background: transparent url("img/me.jpg") no-repeat 50% 50%;
+	}
+	aside h1:hover
+	{
+		background-image: url("img/me_art.jpg");
+	}
+	#section-wrapper
+	{
+		position: relative;
+		width: 60%;		
+	}
+	#daily a
+	{
+		margin: 0 20px 20px 0;
+	}
+}
+@media handheld, screen and (max-width: 600px)
+{
+	body
+	{
+		float: left;
+		width: auto;
+		padding-left: 20px; 
+	}
+	aside
+	{
+		top: 0;
+		width: 100%;
+		max-width: 100%; 
+		padding: 20px 0;
+	}
+	aside > div
+	{
+		float: left; 
+	}
+	aside h1
+	{		
+		background-position: 0 0;
+		float: left;
+		width: 240px;
+	}
+	#more-info
+	{
+		display: inline;
+		opacity: 1;
+	}
+	aside ul
+	{ 
+		clear: none;
+		font-size: 22px;
+	}
+	#section-wrapper
+	{
+		width: 100%;
+		padding-top: 0;
+	}
+}
+@media handheld, screen and (max-width: 420px)
+{
+	body 
+	{
+		font-size: 13px;
+	}
+	aside div
+	{
+		float: none;
+	}
+	aside h1
+	{
+		float: none;
+		margin: 0 auto;
+		width: 220px;
+	}
+	aside li 
+	{
+		display: block;
+		text-align: center;
+	}
+	aside li:before
+	{
+		display: none;
+	}
+	.meme
+	{
+		background-size: 100% auto !important; 
+	}
+	.meme h2
+	{
+		margin-bottom: 260px;
+	}
+	section h2
+	{
+		font-size: 17px;
+	}
+	#skills .ext-links 
+	{ 
+		column-count: 1;
+		column-gap: 0;
+	}
+	#daily,
+	#more-info
+	{
+		display: none;	
+	}
+}
